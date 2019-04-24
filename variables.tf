@@ -3,5 +3,11 @@ variable "location" {}
 variable "name" {}
 
 variable "tags" {
-  type = "list"
+  description = "The tags to associate with your network and subnets."
+  type        = "map"
+
+  default = {
+    tag1 = ""
+    tag2 = ""
+  }
 }
